@@ -9,8 +9,27 @@
 </head>
 
 <body>
+    <div id="tyModal">
+        <div class="tyModalContent">
+            <span class="tyClose">&times;</span>
+            <h1>好康報報</h1>
+            <p>優惠資訊</p>
+        </div>
+    </div>
     <h1>皮卡h1</h1>
     <p>hi</p>
+    <script>
+        var modalElem = document.getElementById("tyModal");
+        var spanElem = document.getElementsByClassName("tyClose")[0];
+
+        spanElem.onclick = function () {
+            modalElem.style.display = "none";
+        }
+
+        setTimeout(function () {
+            modalElem.style.display = "block";
+        }, 1000);
+    </script>
 </body>
 
 </html>
